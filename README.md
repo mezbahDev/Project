@@ -1,4 +1,5 @@
 # Project
-this is the weather project, made by css, js, html. 
+ther are some projects, made by css, js, html. 
 you can practice it. 
 
+or you can use it
