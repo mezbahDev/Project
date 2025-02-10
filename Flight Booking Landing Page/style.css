@@ -217,5 +217,64 @@ nav{
 }
 
 .plan_grid{
-    background-color: pink;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.plan_content .number{
+    display: inline-block;
+    padding: 5px 15px;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 2rem;
+}
+
+.plan_content .number:nth-child(4){
+    background-color: #e98b6d;
+}
+
+.plan_content .number:nth-child(7){
+    background-color: #ffcca3;
+}
+
+.plan_content h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.plan_content p{
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+.plan_image{
+    position: relative;
+}
+
+.plan_image img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 10rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.plan_image img:nth-child(1){
+    max-width: 250px;
+    transform: translate(calc(-50% - 9rem), calc(-50% + 5rem));
+    z-index: 3;
+}
+.plan_image img:nth-child(2){
+    max-width: 260px;
+    transform: translate(-50% , calc(-50% - 5rem));
+    z-index: 2;
+}
+.plan_image img:nth-child(3){
+    max-width: 230px;
+    transform: translate(calc(-50% + 9rem), calc(-50% + 5rem));
 }
